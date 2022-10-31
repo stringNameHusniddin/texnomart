@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: rBText;
+    src: url(./roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: rText;
+    src: url(./roboto/Roboto-Regular.ttf);
+}
+.site{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+}
+.header{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    width: 100%;
+}
+.navbar{
+    width: 90%;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+    list-style: none;
+}
+.navbar ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333333;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: rBText;
+}
+.navbar .input{
+    display: flex;
+    width: 40%;
+    background-color: #fbc100;
+    border: 4px solid #fbc100;
+    border-radius:6px ;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchIcon{
+    border: none;
+    background-color: #fbc100;
+    width: 51px;
+    height: 43px;
+}
+.btnInput{
+    background-color: #fff;
+    height: 38px;
+    width: 90%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+.btnInput input{
+    width: 50%;
+    border: none;
+    background-color: #fff;
+}
+.btnInput input:focus{
+    outline: none;
+}
+.btnInput button{
+    background: #f7f7f7;
+    border-radius: 4px;
+    border: none;
+    height: 100%;
+    width: 168px;
+    font-size: 12px;
+    font-family: rBText;
+}
+.btnInput button  span{
+    margin-left: 10px;
+}
+.katalog{
+    width: 90%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.katalog ul{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.katalog ul li a{
+    color: #373f41;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: rBText;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.katalog button{
+    width: 130px;
+    height: 44px;
+    background-color: #fbc100;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    font-family: rText;
+}
+.title{
+    height: 100px;
+    width: 90%;
+    font-weight: 500;
+    color: #000;
+    font-size: 24px;
+    font-family: rBText;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#main{
+    width: 100%;
+    border-top: 3px solid #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+#main .left{
+    width: 300px;
+    height: 1000px;
+    border-right: 3px solid #f7f7f7;
+}
+#main #right{
+    width: calc(90% - 300px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around    ;
+}
+.card{
+    text-decoration: none;
+    width: 320px;
+    height: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 50px;
+    border-right:2px solid #f4f4f4 ;
+}
+.card .pName{
+    color: #373f41;
+    font-family: rText;
+    font-size: 14px;
+    font-weight: 400;
+}
+.card .pNarx{
+    font-weight: 700;
+    font-size: 16px;
+    font-family: rBTxet;
+    color: #333;
+}
+.card .oyTulash {
+    background-color: #f4f4f4;
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
+    color: #333;
+    font-family: rBText;
+    width: 145px;
+    height: 30px;
+}
+.btnCard{
+    background: #fbc100;
+    border: 2px solid #fbc100;
+    width: 125px;
+    height: 38px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.btnCard p{
+    font-size: 14px;
+    font-weight:500;
+    color: #333;
+    font-family: rText;
+}
+.card2{
+    width: 90%;
+    height: calc(80% - 180px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+#main .left ul{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+}
+#main .left ul li a{
+    font-weight: 500;
+    font-size: 15px;
+    color: #333333;
+    font-family: rText;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.mavjud{
+    padding: 14px 16px;
+    border: 2px solid #fbc100;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mavjud input{
+    border: 1px solid rgb(236, 236, 136);
+    width: 18px;
+    height: 18px;
+}
+.mavjud p{
+    font-size: 14px;
+    color: #333;
+    font-family: rText;
+    margin-left: 15px;
+}
+
+.input2 input{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    background-color: #fbc100;
+}
+.input2 input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #fbc100;
+}
+
+
+
+
+
+
+#title{
+    width: 90%;
+    color: #373f41;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: rBText;
+    height: 100px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.main2{
+    border-top: 2px solid #f4f4f4;
+    width: 100%;
+    padding: 0% 10;
+    padding-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 700px;
+}
+.karusel{
+    width: 598px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.karusel #asosiyImg{
+    width: 539px;
+    height: 450px;
+    object-fit: contain;
+}
+.malumotlar{
+    width: 300px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.malumotlar p{
+    font-size: 14px;
+    color: #767676;
+    font-weight: 400;
+    font-family: rText;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+.malumotlar .title{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: rBText;
+    color: #333;
+}
+.sotishFather{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 650px;
+    width: 302px;
+}
+.sotish{
+    width: 301px;
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 12%);
+    border-radius: 8px;
+}
+.sotish p{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: rBText;
+    color: #333;
+    width: 90%;
+}
+.sotish .savatcha{
+    width: 90%;
+    height: 52px;
+    background-color: #fbc100;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: rText; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.sotish .klik{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .2px;
+    height: 52px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid #fbc100;
+}
+.mudatliSotish{
+    box-shadow: 0 4px 20px rgb(0 0 0 / 12%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 140px;
+    width: 302px;
+    flex-direction: column;
+}
+.mudatliSotish p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 0;
+    width: 90%;
+    background: #f4f4f4;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.mudatliSotish button{
+    height: 52px;
+    background-color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .2px;
+    width: 90%;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 0 #000;
+}
+.sungiCard{
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    width: 302px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.sungiCard .cardcha{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px dashed #dad8d8;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+#cardcha{
+    border: none;
+}
+.cardcha p{
+    width: 80%;
+    color: #767676;
+    font-size: 13px;
+    font-family: rBText;
+}
+.cardcha p span{
+    color: #333;
+}
+.left{
+    height: 1000px;
+}
+.right{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sonlar .left2{
+    height: 44px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sonlar{
+    border: 1px solid #d5d8df;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.dan{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dan p{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+.border{
+
+    border-right: 1px solid #d5d8df;
+}
+.sonlar p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+}
+
+.brend{
+    width: 100px;
+    display: flex;
+    gap: 10px;
+    height: 40px;
+    align-items: center;
+}
+
+
+
+
+.mavjud{
+    margin: 20px 0;
+}
+    
+.card{
+    position: relative; 
+}
+.card img{
+    object-fit: contain;
+    width: 100%;
+    height: 160PX;
+}
+.tezKurish{
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-weight: 400;
+    transition: .2s;
+    font-size: 14px;
+    line-height: 20px;
+    background: hsla(0,0%,96.9%,.9);
+    border-radius: 6px;
+    align-items: center;
+    padding: 8px 16px;
+    color: #333;
+    cursor: pointer;
+}
+.card:hover .tezKurish{
+    display: flex;
+}
